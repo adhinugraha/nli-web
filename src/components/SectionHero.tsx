@@ -11,7 +11,7 @@ export const SectionHero = () => {
 
         setTimeout(() => {
             setShowVideo(true);
-        }, 2000)
+        }, 3000)
 
         const handleResize = () => {
             const width = window.innerWidth;
