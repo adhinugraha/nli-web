@@ -7,7 +7,7 @@ export const SectionHero = () => {
     const [dimensions, setDimensions] = useState({ width: 0, height: 0 });
     const [showVideo, setShowVideo] = useState(false);
 
-    let isDesktop = window.innerWidth > 768;
+    const isDesktop = window.innerWidth > 768;
 
     useEffect(() => {
 
