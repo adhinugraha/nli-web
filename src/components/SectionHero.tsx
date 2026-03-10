@@ -32,11 +32,9 @@ export const SectionHero = () => {
         <div className="d-flex flex-column justify-content-center align-items-center section-hero">
             <div className="bg-video-container">
                 {
-                    showVideo ? 
+                    isDesktop ? 
                     <>
-                        {
-                            isDesktop ?
-                            <iframe className="bg-video"
+                        <iframe className="bg-video"
                                 role="presentation"
                                 frameBorder="0"
                                 allowFullScreen
@@ -48,9 +46,6 @@ export const SectionHero = () => {
                                     height: dimensions.height ? `${dimensions.height}px` : '56.25vw'
                                 }}
                                 src="https://www.youtube.com/embed/fYRIG0kxOcA?autoplay=1&mute=1&loop=1&controls=0&playlist=fYRIG0kxOcA" />
-                                :
-                                <Image src="/assets/images/img-hero.png" alt="nirvanalife-logo" height={100} width={100} className="z-1 mb-5" />
-                        }
                     </>
                     :
                     <></>
