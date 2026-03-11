@@ -29,10 +29,16 @@ export const SectionHero = () => {
     return (
         <div className="d-flex flex-column justify-content-center align-items-center section-hero">
             <div className="bg-video-container">
-                <video autoPlay muted className="bg-video" style={{
-                                width: dimensions.width ? `${dimensions.width}px` : '100vw',
-                                height: dimensions.height ? `${dimensions.height}px` : '56.25vw'
-                            }}>
+                <video 
+                    autoPlay 
+                    muted 
+                    loop
+                    className="bg-video" 
+                    title="Real estate Nirvana life Investment"
+                    style={{
+                        width: dimensions.width ? `${dimensions.width}px` : '100vw',
+                        height: dimensions.height ? `${dimensions.height}px` : '56.25vw'
+                    }}>
                     <source src="/assets/videos/hero-video.mp4" type="video/mp4"/>
                 </video>
                 {/* {

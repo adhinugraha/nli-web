@@ -4,9 +4,11 @@ import { Container } from "react-bootstrap";
 
 export default function Home() {
   return (
-    <Container className='main-container p-0'>
+    <>
+    {/* <Container className='main-container p-0'> */}
       <SectionHero />
       <SectionAbout />
-    </Container>
+    {/* </Container> */}
+    </>
   );
 }

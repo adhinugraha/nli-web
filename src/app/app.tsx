@@ -12,11 +12,11 @@ const App: FC<AppProps> = ({ children }) => {
   const slug: string = strReplace.slice(0, -1);
 
   return (
-    <div id="app" className={`w-100 page${path === '/' ? '-landing' : slug + ''}`} data-page={`page${path === '/' ? '-landing' : slug}`}>
+    <main id="app" className={`w-100 page${path === '/' ? '-landing' : slug + ''}`} data-page={`page${path === '/' ? '-landing' : slug}`}>
       <Suspense>
           {children}
       </Suspense>
-    </div>
+    </main>
   )
 }
 
