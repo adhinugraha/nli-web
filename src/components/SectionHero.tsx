@@ -26,7 +26,7 @@ export const SectionHero = () => {
             <div className="bg-video-container">
                 {!isVideoLoaded && (
                     <Image
-                        src="/assets/images/img-hero-f1.png"
+                        src="/assets/images/img-hero-f1.webp"
                         alt="Hero Placeholder"
                         style={{
                             width: dimensions.width ? `${dimensions.width}px` : '100vw',
@@ -52,7 +52,7 @@ export const SectionHero = () => {
                         opacity: isVideoLoaded ? 1 : 0,
                         transition: 'opacity 0.5s ease-in-out'
                     }}>
-                    <source src="/assets/videos/hero-video.mp4" type="video/mp4" />
+                    <source src="/assets/videos/hero-video.webm" type="video/webm" />
                 </video>
                 {/* <iframe className="bg-video" 
                             role="presentation"
@@ -68,8 +68,8 @@ export const SectionHero = () => {
                         src="https://www.youtube.com/embed/fYRIG0kxOcA?autoplay=1&mute=1&loop=1&controls=0&playlist=fYRIG0kxOcA" /> */}
             </div>
             <div className="d-flex flex-column justify-content-center align-items-center mb-5 gap-5 body-content">
-                <Image src="/assets/icons/nirvanalife-logo.png" alt="nirvanalife-logo" height={100} width={100} className="z-1 mb-5" />
-                <Image src="/assets/images/text-logo-white.png" alt="nirvanalife-logo" height={100} className="z-1" fetchPriority="high" />
+                <Image src="/assets/icons/nirvanalife-logo.webp" alt="nirvanalife-logo" height={100} width={100} className="z-1 mb-5" />
+                <Image src="/assets/images/text-logo-white.webp" alt="nirvanalife-logo" height={100} className="z-1" fetchPriority="high" />
             </div>
         </div>
     )
