@@ -171,6 +171,18 @@ h6 {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
+
+  &::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: block;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba($black-color, 0.65);
+  }
 }
 
 .page-landing {
