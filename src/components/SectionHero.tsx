@@ -57,7 +57,7 @@ export const SectionHero = () => {
             </div>
             <div className="d-flex flex-column justify-content-center align-items-center mb-5 gap-5 body-content">
                 <Image src="/assets/icons/nirvanalife-logo.png" alt="nirvanalife-logo" height={100} width={100} className="z-1 mb-5" />
-                <Image src="/assets/images/text-logo-white.png" alt="nirvanalife-logo" height={100} className="z-1" />
+                <Image src="/assets/images/text-logo-white.png" alt="nirvanalife-logo" height={100} className="z-1" fetchPriority="high"/>
             </div>
         </div>
     )
